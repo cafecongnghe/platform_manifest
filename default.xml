@@ -2,12 +2,18 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com" />
+           fetch="https://android.googlesource.com/"
+           review="https://android-review.googlesource.com/" />
+
+  <remote  name="teamtek"
+           fetch="https://github.com/"
+           review="review.teamtekcafe.org:8090" />
+
   <default revision="refs/tags/android-4.4.2_r2"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform/build" groups="pdk" >
+  <project path="build" name="cafecongnghe/android_build" remote="teamtek" revision="kk-4.4" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -428,4 +434,5 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
 
+  <project path="platform_manifest" name="cafecongnghe/platform_manifest" remote="teamtek" revision="kk-4.4" />
 </manifest>
