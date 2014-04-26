@@ -435,4 +435,5 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
 
   <project path="platform_manifest" name="cafecongnghe/platform_manifest" remote="teamtek" revision="kk-4.4" />
+  <project path="vendor/teamtek" name="cafecongnghe/android_vendor_teamtek" remote="teamtek" revision="kk-4.4" />
 </manifest>
