@@ -9,6 +9,9 @@
            fetch="https://github.com/"
            review="review.teamtekcafe.org:8090" />
 
+  <remote  name="themuppets"
+           fetch="https://github.com/"
+
   <default revision="refs/tags/android-4.4.2_r2"
            remote="aosp"
            sync-j="4" />
@@ -47,8 +50,7 @@
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/lge/hammerhead" name="device/lge/hammerhead" groups="device,hammerhead" />
   <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" />
-  <project path="device/lge/mako" name="device/lge/mako" groups="device,mako" />
-  <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" />
+  <project path="device/lge/mako" name="cafecongnghe/android_device_lge_mako" remote="teamtek" revision="kk-4.4" groups="notdefault,device,mako" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
@@ -433,6 +435,10 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+
+  <project path="kernel/lge/mako" name="android_kernel_lge_mako" remote="teamtek" revision="kk-4.4" />
+
+  <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" remote="themuppets" revision="cm-11.0" />
 
   <project path="platform_manifest" name="cafecongnghe/platform_manifest" remote="teamtek" revision="kk-4.4" />
 </manifest>
